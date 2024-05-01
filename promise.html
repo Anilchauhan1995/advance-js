@@ -1,0 +1,151 @@
+<script>
+
+//     let complete = 4;
+
+// let prom1 = new Promise(function(resolve,reject){
+    
+//     if(complete){
+//         resolve(`I am successfull.`);
+//     }else{
+//             reject(`I am failed.`);
+//     }
+
+// });
+
+// prom1.then(function(result) {
+
+// console.log(result);
+
+// }).catch(function(errorResult){
+
+// console.log(errorResult);
+// })
+
+
+
+// let num = prompt("enter a number value.");
+
+// const prom = new Promise((resolve, reject) => {
+    
+//     if (num % 2 == 0) {
+        
+//         resolve(`this Number is even ${num}`);
+        
+//     } else {
+//         reject(`this Number is odd ${num}`);
+        
+//     }
+// })
+
+// prom.then(function(result) {
+    
+//     console.log(result);
+// }).catch(function(error) {
+//     console.log(error);
+    
+// })
+
+
+// const proms = myproms(4);
+
+// function myproms(num){
+
+// return new Promise((resolve, reject) => {
+//     if (num  % 2 == 0) {
+
+//     resolve(`this number is even ${num}`);
+        
+//     } else {
+//         reject(`this number is odd ${num}`);
+        
+//     }
+// })
+
+// }
+
+// proms.then(function(result) {
+
+// console.log(result);
+
+// }).catch(function(errorResult){
+
+// console.log(errorResult);
+// })
+
+
+// for (let i = 0; i <= 10; i++) {
+// const p1 = new Promise(function (res, rej) {
+//     if (i % 2 == 0) {
+//       res("this number is even " + i);
+//     } else {
+//       rej("this number is odd!" + i);
+//     }
+// });
+
+
+// p1 => then , catch | resolve ? then : catch
+
+// Using the promise
+// p1.then(function (res) {
+//   //Resolve
+//   console.log(res);
+// }).catch(function (err) {
+//     //Reject
+//     console.log(err);
+// });
+// }
+
+//  const num = [1,3,4,6,8,10,12,14,16,18]
+// for (let i = 0; i <= num.length; i++) {
+// const p1 = new Promise(function (res, rej) {
+//     if (i % 2 == 0) {
+//       res("this number is even " + i);
+//     } else {
+//       rej("this number is odd!" + i);
+//     }
+// });
+
+
+// p1 => then , catch | resolve ? then : catch
+
+// Using the promise
+// p1.then(function (res) {
+//   //Resolve
+//   console.log(res);
+// }).catch(function (err) {
+//     //Reject
+//     console.log(err);
+// });
+// }
+
+
+const fruit = []
+
+
+function prom(fruit) {
+  return new Promise((resolve, reject) => {
+    if (fruit !== undefined && fruit !==null) {
+
+      resolve(`value is ${fruit}`)
+      
+    } else {
+      reject("value is empty")
+      
+    }
+  })
+  
+}
+// console.log(fruit);
+for (let i = 0; i <fruit.length; i++) {
+  prom(fruit[i]).then((result) => {
+    console.log(result);
+    
+  }).catch((err) => {
+    console.log(err);
+  });
+  
+}
+
+
+
+</script>
